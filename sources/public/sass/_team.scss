@@ -1,0 +1,85 @@
+/*--------------------------------------------------
+Team Styles
+--------------------------------------------------*/
+
+.team-area {
+    background-image: url(../images/backgrounds/music-equalizer.png), url(../images/backgrounds/music-equalizer-top.png);
+    background-position: bottom center, top center;
+    background-repeat: no-repeat;
+    &.style-2 {
+        background-image: url(../images/backgrounds/wave-shape.png);
+        padding-top: 0 !important;
+    }
+}
+
+.team-member {
+    max-width: 270px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    border-radius: 25px;
+    .member-image {
+        padding: 40px;
+        img {
+            position: absolute;
+            display: block;
+            width: 180px;
+            height: 180px;
+        }
+        .image-overlay {
+            position: relative;
+            top: 0;
+            border-radius: 50%;
+            background-image: -moz-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+            background-image: -webkit-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+            background-image: -ms-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+            opacity: 0;
+            width: 180px;
+            height: 180px;
+            @include transition(all 0.3s ease 0s);
+            .member-connections {
+                top: 50%;
+                @include transform(translateY(-50%));
+                position: relative;
+                a {
+                    i {
+                        font-size: 16px;
+                        color: #fff;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &:hover .image-overlay {
+        opacity: .9;
+    }
+    .member-info {
+        padding: 20px 0;
+        border-top: 2px solid rgba(0, 0, 0, 0.07);
+        text-align: center;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        @include transition(all 0.3s ease 0s);
+        .member-name {
+            margin-top: 0px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            line-height: 26px;
+            text-transform: uppercase;
+        }
+        .member-role {
+            font-size: 12px;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+    &:hover .member-info {
+        background-image: -moz-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        background-image: -webkit-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        background-image: -ms-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        color: #fff;
+    }
+}

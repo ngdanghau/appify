@@ -1,0 +1,48 @@
+/*--------------------------------------------------
+Footer Styles
+--------------------------------------------------*/
+
+.footer-area {
+    background-image: url(../images/backgrounds/footer-top.png), url(../images/backgrounds/music-equalizer.png);
+    background-position: center top, center bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+    .img-overlay {
+        padding-top: 200px;
+        padding-bottom: 170px;
+    }
+    &.style-2 {
+        background-image: url(../images/backgrounds/footer-top.png), url(../images/backgrounds/wave-shape.png);
+    }
+}
+
+.footer-widget {
+    .footer-logo {}
+    .socials {
+        margin-bottom: 50px;
+        margin-top: 30px;
+        a {
+            font-size: 14px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            margin: 0px 5px;
+            color: #fff;
+            &:hover {
+                border-radius: 50%;
+                background-image: -moz-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+                background-image: -webkit-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+                background-image: -ms-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+    .copyright {
+        color: #fff;
+        a {
+            color: #fff;
+        }
+    }
+}

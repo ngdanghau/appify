@@ -1,0 +1,304 @@
+/*--------------------------------------------------
+Blog Single Page Styles
+--------------------------------------------------*/
+
+.blog-single-header {
+    background-image: url(../images/backgrounds/header-bg.jpg);
+    .img-overlay {
+        padding: 225px 0 180px 0px;
+    }
+    .title {
+        color: #fff;
+        text-align: center;
+        font-size: 45px;
+    }
+}
+
+.blog-single {
+    float: left;
+    width: 100%;
+    clear: both;
+    .post {
+        float: left;
+        width: 100%;
+        clear: both;
+    }
+    .post-bar {
+        float: left;
+        width: 100%;
+    }
+    .post-inner {
+        float: left;
+        width: 100%;
+        margin: 0px 0 30px 0px;
+        border-radius: 5px;
+    }
+    .post-metas {
+        margin-top: 30px;
+        margin-bottom: 0;
+        color: $primaryColor;
+        .post-meta {
+            +.post-meta {
+                margin-left: 20px;
+            }
+        }
+    }
+    .post-entry {
+        margin-top: 20px;
+        p {
+            margin-bottom: 30px;
+        }
+        blockquote {
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: $baseLineHeight;
+            border-color: #36a2eb;
+            border-width: 6px;
+            margin: 30px 0 30px 30px;
+        }
+    }
+    .share-on {
+        margin-top: 30px;
+        background-color: #f7f7f7;
+        padding: 12px 0px 12px 30px;
+        color: $primaryColor;
+        a {
+            color: $primaryColor;
+            padding: 0 5px;
+        }
+    }
+}
+
+.given-comment {
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    .given-comment-title {
+        margin-top: 0;
+        margin-bottom: 34px;
+        font-family: $baseFontFamily;
+        font-size: 1.8rem;
+        float: left;
+        width: 100%;
+    }
+    .comments {
+        float: left;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        &.child-comments {
+            padding-left: 100px;
+        }
+    }
+    .comment {
+        float: left;
+        width: 100%;
+    }
+    .comment-wrap {
+        width: 100%;
+        float: left;
+        margin-bottom: 50px;
+    }
+    .commenter-thumb {
+        float: left;
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .comment-body {
+        float: left;
+        width: calc(100% - 120px);
+    }
+    .comment-title {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 1.8rem;
+        .comment-date {
+            font-weight: 400;
+            font-size: 1.4rem;
+        }
+    }
+    .comment-content p {
+        margin-bottom: 7px;
+    }
+    .comment-reply {
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+}
+
+.commenting-wrap {
+    float: left;
+    max-width: 500px;
+    margin-top: 60px;
+    .comment-form-title {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-family: $baseFontFamily;
+        font-size: 22px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        float: left;
+        width: 100%;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+    .comment-form {}
+}
+
+
+/*** Sidebar ***/
+
+.widget {
+    float: left;
+    width: 100%;
+    &+& {
+        margin-top: 40px;
+    }
+    .widget-title {
+        position: relative;
+        margin: 0px 0px 35px;
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+    .widget-inner {
+        float: left;
+        width: 100%;
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .search-widget {}
+    .searchform {
+        width: 100%;
+        float: left;
+        position: relative;
+        & [type=search] {
+            color: #111111;
+            width: 100%;
+            height: 50px;
+            border: none !important;
+            background-color: #f7f7f7 !important;
+            line-height: 48px;
+            padding: 0 60px 0 15px;
+        }
+        & [type=submit] {
+            width: 60px;
+            height: 50px;
+            border: 1px solid transparent;
+            line-height: 48px;
+            color: #000;
+            position: absolute;
+            background-color: transparent;
+            right: 0;
+            top: 0;
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            color: #000;
+            line-height: $baseLineHeight;
+            a {
+                color: inherit;
+                &:hover {
+                    color: $primaryColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &.post-widget ul li {
+        +li {
+            margin-top: 10px;
+        }
+        a {
+            text-decoration: underline;
+            &:before {
+                text-decoration: none;
+            }
+        }
+    }
+    .widget-posts {
+        float: left;
+        width: 100%;
+        margin-bottom: -15px;
+    }
+    .widget-post {
+        float: left;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .widget-post-thumb {
+        float: left;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        margin-right: 15px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .widget-post-body {
+        width: calc(100% - 85px);
+        float: left;
+        margin-top: 6px;
+        .widget-post-title {
+            color: #000;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+    .widget-tag {
+        margin-left: -10px;
+        margin-right: -10px;
+        float: left;
+        a {
+            color: #000;
+            margin-left: 10px;
+            margin-right: 10px;
+            float: left;
+            line-height: $baseLineHeight;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+.sidebar .widget .searchform ::-webkit-input-placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.sidebar .widget .searchform ::-moz-placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.sidebar .widget .searchform :-ms-input-placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.sidebar .widget .searchform :-moz-placeholder {
+    color: #000;
+    opacity: 1;
+}

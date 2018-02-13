@@ -1,0 +1,83 @@
+/*--------------------------------------------------
+Download Styles
+--------------------------------------------------*/
+
+.download {
+    background-image: url(../images/backgrounds/download-area-bg.jpg);
+    .img-overlay {
+        padding: 120px 0;
+    }
+    .section-header-white {
+        margin-bottom: 55px;
+        .section-header-white-icon {
+            font-size: 35px;
+            color: #fff;
+        }
+        .section-white-title {
+            font-size: 34px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin: 15px 0;
+            color: #fff;
+        }
+        .section-subtext {
+            color: #fff;
+        }
+    }
+    .download-links {
+        margin-bottom: 50px;
+        a {
+            margin-right: 20px;
+        }
+    }
+    .subscribe-form-area {
+        h4 {
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+        .subscribe-form {
+            max-width: 350px;
+            margin: 0 auto;
+            position: relative;
+            button {
+                font-size: 14px;
+                color: #fff;
+                background-color: transparent;
+                border: none;
+                line-height: 32px;
+                position: absolute;
+                top: 0;
+                right: 25px;
+                text-align: center;
+            }
+             ::-webkit-input-placeholder {
+                color: rgba(255, 255, 255, .5);
+            }
+             :-moz-placeholder {
+                color: rgba(255, 255, 255, .5);
+            }
+             ::-moz-placeholder {
+                color: rgba(255, 255, 255, .5);
+            }
+             :-ms-input-placeholder {
+                color: rgba(255, 255, 255, .5);
+            }
+        }
+    }
+}
+
+.subscribe-form input[type=email] {
+    position: relative;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, .07) !important;
+    border: 1px solid transparent;
+    border-radius: 22px;
+    &:focus {
+        border: 1px solid #fff;
+    }
+}

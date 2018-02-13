@@ -1,0 +1,110 @@
+/*--------------------------------------------------
+Banner Styles
+--------------------------------------------------*/
+
+.banner {
+    height: 768px;
+    background-color: $primaryColor;
+    position: relative;
+    background-image: url(../images/backgrounds/header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: -moz-linear-gradient( 45deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        background-image: -webkit-linear-gradient( 45deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        background-image: -ms-linear-gradient( 45deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        opacity: .9;
+    }
+}
+
+.left-part {
+    height: 768px;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    margin-top: 45px;
+}
+
+.banner-content {
+    .banner-title {
+        color: #ffffff;
+        font-size: 64px;
+        line-height: 85px;
+        margin: 0;
+        font-weight: 700;
+    }
+    .button-group {
+        margin-top: 50px;
+        .btn {
+            margin-right: 20px;
+            &.play-store,
+            &.app-store {
+                padding: 14px 40px;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                border-color: #fff;
+                i {
+                    margin-right: 10px;
+                }
+                &:hover {
+                    background-color: #fff;
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}
+
+.right-part {
+    text-align: right;
+    float: left;
+    width: 100%;
+    float: left;
+    height: 768px;
+}
+
+.banner-mock {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin-top: 45px;
+    .back-mock {
+        position: absolute;
+        right: 75px;
+        z-index: -1;
+        bottom: -26px;
+    }
+}
+
+.banner-play-button {
+    position: absolute;
+    left: 50%;
+    bottom: -115px;
+    transform: translateX(-50%);
+    .play-btn {
+        .btn-icon {
+            margin-top: 19px;
+            i {
+                margin-top: 30px;
+            }
+        }
+    }
+}

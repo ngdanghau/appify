@@ -1,0 +1,50 @@
+/*--------------------------------------------------
+Service Styles
+--------------------------------------------------*/
+
+.service-area {
+    background-image: url(../images/backgrounds/music-equalizer.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    &.service-area-bg-2 {
+        background-image: url(../images/backgrounds/wave-shape.png);
+    }
+}
+
+.services {}
+
+.service {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 50px 20px;
+    @include transition(all 0.3s ease);
+    .service-icon {
+        font-size: 35px;
+        background: -webkit-linear-gradient(left, #f51d46, #111111);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .service-title {
+        font-size: 22px;
+        color: $primaryColor;
+        margin: 20px 0;
+        @include transition(all 0.3s ease);
+    }
+    p {
+        margin: 0;
+    }
+    &:hover {
+        background: -webkit-linear-gradient(left, #f51d46, #111111);
+        color: #fff;
+    }
+    &:hover .service-icon {
+        background: -webkit-linear-gradient(left, #fff, #fff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &:hover .service-title {
+        color: #fff;
+    }
+}

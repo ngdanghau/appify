@@ -1,0 +1,225 @@
+/*--------------------------------------------------
+General Styles
+--------------------------------------------------*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: $baseFontFamily;
+    line-height: $baseLineHeight;
+    color: $baseFontColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $baseFontFamily;
+    margin: 0;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+p {
+    .theme-bg &,
+    .text-white & {
+        color: #ffffff;
+    }
+}
+
+a {
+    color: $primaryColor;
+    transition: all 0.3s ease;
+    &:focus,
+    &:visited {
+        color: $primaryColor;
+        text-decoration: none;
+        outline: none;
+    }
+    &:hover {
+        color: $primaryHover;
+        text-decoration: none;
+    }
+}
+
+form {
+    position: relative;
+}
+
+a {
+    color: #111;
+    @include transition(all 0.3s);
+    &:hover {
+        text-decoration: none;
+        color: $primaryColor;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+form {
+    position: relative;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    padding: 8px 20px;
+    margin: 10px 0;
+    @include transition(all 0.3s ease);
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    padding: 15px;
+    min-height: 100px;
+    margin: 10px 0;
+    @include transition(all 0.3s ease);
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+}
+
+:-moz-placeholder {
+    color: #999;
+}
+
+::-moz-placeholder {
+    color: #999;
+}
+
+:-ms-input-placeholder {
+    color: #999;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: $primaryColor;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.form-control:focus {
+    border-color: $primaryColor !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.btn {
+    border-radius: 27px;
+    color: #111;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    border: 1px solid $primaryColor;
+    @include transition(all 0.3s ease);
+}
+
+.btn-submit {
+    background-image: -moz-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+    border: 1px solid transparent;
+    padding: 8px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    &:focus,
+    &:visited,
+    &:active,
+    &:focus:active {
+        background-image: -moz-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        background-image: -webkit-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        background-image: -ms-linear-gradient( 0deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        border: 1px solid transparent;
+        color: #fff;
+    }
+    &:hover,
+    &:hover:focus,
+    &:hover:visited,
+    &:hover:active,
+    &:hover:focus:active {
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid $primaryColor;
+        color: $primaryColor;
+    }
+}
+
+.section-padding {
+    padding: 120px 0;
+}
+
+.section-header {
+    margin-bottom: 55px;
+}
+
+.section-title {
+    font-size: 34px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    background: -webkit-linear-gradient(left, #f51d46, #111111);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-subtext {
+    margin: 0;
+}
+
+.section-header-icon {
+    font-size: 35px;
+    background: -webkit-linear-gradient(left, #f51d46, #111111);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img-overlay {
+    background-image: -moz-linear-gradient( 0deg, rgba(245, 29, 70, 0.9) 0%, rgba(17, 17, 17, 0.9) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgba(245, 29, 70, 0.9) 0%, rgba(17, 17, 17, 0.9) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgba(245, 29, 70, 0.9) 0%, rgba(17, 17, 17, 0.9) 100%);
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.page-header {
+    padding: 0;
+    margin: 0;
+    border: none;
+}

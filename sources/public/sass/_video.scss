@@ -1,0 +1,48 @@
+/*--------------------------------------------------
+Video Styles
+--------------------------------------------------*/
+
+.video {
+    background-image: url(../images/backgrounds/video-bg.jpg);
+    .img-overlay {
+        padding: 250px 0;
+    }
+    &.video-bg-2 {
+        background-image: url(../images/backgrounds/video-bg-2.jpg);
+    }
+}
+
+.play-btn {
+    width: 228px;
+    height: 228px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    .btn-icon {
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 178px;
+        height: 178px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: 19px;
+        i {
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            margin-top: 60px;
+            color: #fff;
+            font-size: 14px;
+            @include transition(all 0.3s ease);
+            .fa-play {
+                &:before {
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0 0 46px 0 rgba(255, 255, 255, 0.5);
+    }
+}

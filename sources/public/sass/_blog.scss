@@ -1,0 +1,75 @@
+/*--------------------------------------------------
+Blog Page Styles
+--------------------------------------------------*/
+
+.blog-header {
+    background-image: url(../images/backgrounds/blog-header-bg.jpg);
+    .img-overlay {
+        padding: 225px 0 180px 0px;
+    }
+    .title {
+        color: #fff;
+        text-align: center;
+        font-size: 45px;
+    }
+}
+
+.blog-listing {
+    .post {
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        padding: 35px;
+        margin-bottom: 30px;
+    }
+    .post-title {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 26px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        a {
+            color: #111;
+        }
+        &:hover a {
+            color: $primaryColor;
+        }
+    }
+    .post-metas {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        .post-meta {
+            color: $primaryColor;
+        }
+    }
+    .post-excerpt {
+        margin-bottom: 20px;
+    }
+}
+
+.masonry {
+    position: relative;
+    width: 100%;
+    .masonry-item,
+    .grid-sizer {
+        width: 31%;
+    }
+}
+
+.blog-page-btn {
+    text-align: center;
+    margin-top: 30px;
+    .load-more {
+        background-color: $primaryColor;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 14px 45px;
+        &:hover {
+            color: $primaryColor;
+            background-color: #fff;
+        }
+    }
+}

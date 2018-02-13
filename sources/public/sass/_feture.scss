@@ -1,0 +1,55 @@
+/*--------------------------------------------------
+Banner Styles
+--------------------------------------------------*/
+
+.feture {}
+
+.fetures {}
+
+.fetures-left {}
+
+.feture-item {
+    float: left;
+    width: 100%;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    .feture-icon {
+        font-size: 35px;
+        background: -webkit-linear-gradient(left, #f51d46, #111111);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        width: 60px;
+        float: left;
+        margin-right: 30px;
+        line-height: 2.4;
+        &:after {
+            content: "";
+            width: 2px;
+            height: 137px;
+            background-color: rgba(0, 0, 0, 0.08);
+            position: absolute;
+            left: 105px;
+            margin-top: -26px;
+        }
+    }
+    .feture-content {
+        float: left;
+        width: calc(100% - 90px);
+        display: inline-block;
+        .feture-title {
+            color: $primaryColor;
+            margin-bottom: 10px;
+        }
+        .feture-entry {
+            margin: 0;
+        }
+    }
+}
+
+.featured-mock-2 {
+    margin-top: 50px;
+}

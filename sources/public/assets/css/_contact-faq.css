@@ -1,0 +1,117 @@
+/*--------------------------------------------------
+Contact & Faq Styles
+--------------------------------------------------*/
+.panel-group {
+  border-radius: 0; }
+  .panel-group .panel {
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 20px;
+    overflow: hidden; }
+  .panel-group .panel + .panel {
+    margin-top: 16px; }
+  .panel-group .panel-default .panel-heading {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: #fff; }
+    .panel-group .panel-default .panel-heading .panel-title a {
+      background: -webkit-linear-gradient(left, #f51d46, #111111);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+      display: block;
+      background-color: #fff;
+      padding: 18px 25px;
+      position: relative; }
+      .panel-group .panel-default .panel-heading .panel-title a:before, .panel-group .panel-default .panel-heading .panel-title a:after {
+        font: normal normal normal 14px/1 FontAwesome;
+        background: -webkit-linear-gradient(left, #f51d46, #111111);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        right: 25px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      .panel-group .panel-default .panel-heading .panel-title a:before {
+        content: "\f067"; }
+      .panel-group .panel-default .panel-heading .panel-title a:after {
+        content: "\f068"; }
+    .panel-group .panel-default .panel-heading .panel-body {
+      padding: 22px 40px;
+      line-height: 26px;
+      color: #231f20; }
+
+.panel-group .panel-default .panel-heading .panel-title a[aria-expanded=true] {
+  color: #fff;
+  background-image: -moz-linear-gradient(0deg, #f51d46 0%, #111111 100%);
+  background-image: -webkit-linear-gradient(0deg, #f51d46 0%, #111111 100%);
+  background-image: -ms-linear-gradient(0deg, #f51d46 0%, #111111 100%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+.panel-title a span[aria-expanded=true] {
+  background: -webkit-linear-gradient(0deg, #f51d46 0%, #111111 100%) !important;
+  color: #fff; }
+
+.panel-title a[aria-expanded=true] {
+  background-image: -moz-linear-gradient(0deg, #f51d46 0%, #111111 100%);
+  background-image: -webkit-linear-gradient(0deg, #f51d46 0%, #111111 100%);
+  background-image: -ms-linear-gradient(0deg, #f51d46 0%, #111111 100%);
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #fff; }
+
+.panel-title a[aria-expanded=true]:before {
+  display: none; }
+
+.panel-title a[aria-expanded=false]:after {
+  display: none; }
+
+.panel-title a[aria-expanded=true]:after {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fff !important; }
+
+.panel-body {
+  padding: 22px 40px;
+  line-height: 26px;
+  color: #231f20; }
+
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+  background-color: #fff; }
+
+.contact-section {
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 60px 40px; }
+  .contact-section h4 {
+    background: -webkit-linear-gradient(left, #f51d46, #111111);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 20px; }
+
+.input-success {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  border: 1px solid red;
+  display: none; }
+
+.input-error {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  border: 1px solid #e74c3c;
+  display: none; }

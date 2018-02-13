@@ -1,0 +1,86 @@
+/*--------------------------------------------------
+Why choose us Styles
+--------------------------------------------------*/
+
+.why-choose-us-area {
+    background-image: url(../images/backgrounds/music-equalizer.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    &.style-2 {
+        background-image: url(../images/backgrounds/wave-shape.png);
+    }
+}
+
+.why-choose-us {
+    margin: 50px 0;
+    .style-2 & {
+        margin: 68px 0;
+    }
+}
+
+.left-block {
+    text-align: left;
+    .why-choose-us {
+        .why-choose-us-icon {
+            float: left;
+            margin-right: 30px;
+        }
+    }
+}
+
+.right-block {
+    text-align: right;
+    .why-choose-us {
+        .why-choose-us-icon {
+            float: right;
+            margin-left: 30px;
+        }
+    }
+}
+
+.why-choose-us {
+    .why-choose-us-icon {
+        font-size: 20px;
+        background-image: -moz-linear-gradient( 45deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        background-image: -webkit-linear-gradient( 45deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        background-image: -ms-linear-gradient( 45deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        border-radius: 50%;
+        .icon-background {
+            background: white;
+            width: 68px;
+            border-radius: 50%;
+            height: 68px;
+            display: inline-block;
+            margin-top: 1px;
+            span {
+                background: -webkit-linear-gradient(left, #f51d46, #111111);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    .why-choose-us-title {
+        color: $primaryColor;
+        margin-bottom: 10px;
+    }
+    p {
+        margin: 0;
+    }
+    &:hover .icon-background {
+        background-image: -moz-linear-gradient( 45deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        background-image: -webkit-linear-gradient( 45deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+        background-image: -ms-linear-gradient( 45deg, rgb(245, 29, 70) 0%, rgb(17, 17, 17) 100%);
+    }
+    &:hover .icon-background span {
+        -webkit-text-fill-color: #fff;
+    }
+}
+
+.why-choose-center-mock {
+    text-align: center;
+}

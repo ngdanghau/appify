@@ -1,0 +1,77 @@
+/*--------------------------------------------------
+Screenshot Styles
+--------------------------------------------------*/
+
+.review-area {
+    background-image: url(../images/backgrounds/review-area-bg.jpg);
+    .img-overlay {
+        padding: 100px 0;
+    }
+}
+
+.review-carousel-wrapper {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.review-carousel {
+    .owl-wrapper-outer {
+        overflow: visible;
+    }
+    .review {
+        padding: 60px 30px;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        margin-right: 10px;
+        @include transition(all 0.3s ease);
+        .review-icon {
+            font-size: 30px;
+            color: $primaryColor;
+        }
+        .review-text {
+            margin: 25px 0;
+        }
+        .reviewer-image {
+            margin-bottom: 20px;
+            img {
+                max-width: 70px;
+            }
+        }
+        .about-reviewer {
+            .name {
+                font-size: 18px;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
+            .designation {
+                font-size: 12px;
+                line-height: 26px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin: 0;
+            }
+        }
+        &:hover {
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+        }
+        &:hover .review-icon {
+            color: #fff;
+        }
+    }
+}
+
+.Rectangle_1 {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 775px;
+    top: 5310px;
+    width: 370px;
+    height: 378px;
+    z-index: 275;
+}
